@@ -4,6 +4,10 @@ import './registerServiceWorker';
 import router from './router';
 import store from './store';
 
+import BvButton from './components/Bv/Button.vue';
+
+Vue.component('BvButton', BvButton);
+
 Vue.config.productionTip = false;
 
 new Vue({
