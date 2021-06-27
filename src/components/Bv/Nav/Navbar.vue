@@ -15,7 +15,7 @@
             <div class="text-block">About</div>
           </div>
           <nav :style="`display: ${subnav? 'block' : 'none'}; background: transparent`" id="subnav" class="dropdown-list w-dropdown-list">
-            <router-link :to="{ name: 'Privacy' }" class="dropdown-link w-dropdown-link">Privay Policy</router-link>
+            <router-link :to="{ name: 'Privacy' }" class="dropdown-link w-dropdown-link">Privacy Policy</router-link>
             <router-link :to="{ name: 'Contributors' }" class="dropdown-link w-dropdown-link">Contributors</router-link>
           </nav>
         </div>
