@@ -31,7 +31,7 @@ const routes = [
     component: () => import('../views/Add/Terms.vue'),
   },
   {
-    path: '/add-review',
+    path: '/review',
     name: 'Review Bavatar',
     props: true,
     params: true,
