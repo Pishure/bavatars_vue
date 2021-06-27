@@ -9,7 +9,9 @@
         <div class="text-block-5">Your image (Bavatar) can be used freely by anyone in live websites, screenshots, mockups, posters, etc. You are recognisable in the image and it will never be used in adult, racist or discriminating content. <br><br>You have the copyright rights of your image (Bavatar), and <span class="text-span">Bavatars</span> will not store or claim to own the rights to it. </div>
         <p class="paragraph-5">If you have any other concerns please email us <span class="text-span-2">hello@getpishure.com</span></p>
         <div class="add-buttons">
-          <a href="#" class="button linkedin w-button">Add via <span class="text-span-7">  LinkedIn </span></a>
+          <form action="http://localhost:8000/api/auth/redirect?provider=linkedin" method="post">
+            <button type="submit" class="button linkedin w-button">Add via <span class="text-span-7">  LinkedIn </span></button>
+          </form>
           <a href="#" class="button linkedin twiiter w-button">Add via <span class="text-span-7"> Twitter</span></a>
         </div>
       </div>
@@ -18,7 +20,17 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'terms-of-use',
+  methods: {
+    oauth(provider) {
+      axios.get(`http://localhost:8000/api/auth/redirect?provider=${provider}`)
+        .then((res) => {
+          console.log(res);
+        });
+    },
+  },
 };
 </script>

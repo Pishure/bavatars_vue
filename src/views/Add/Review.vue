@@ -32,7 +32,25 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'review',
+  data() {
+    return {
+      code: null,
+    };
+  },
+  mounted() {
+    const { code, provider } = this.$route.query;
+    if (code && provider) {
+      axios.get(`https://bavatar.herokuapp.com/api/auth/callback?code=${code}&provider=${provider}`)
+        .then((res) => {
+          console.log(res.data);
+        });
+    } else {
+      this.$router.push('/');
+    }
+  },
 };
 </script>
