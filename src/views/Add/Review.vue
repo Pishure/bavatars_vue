@@ -42,8 +42,9 @@ export default {
     };
   },
   mounted() {
-    const { code, provider } = this.$route.query;
-    if (code && provider) {
+    const { code } = this.$route.query;
+    const provider = 'linkedin';
+    if (code) {
       axios.get(`https://bavatar.herokuapp.com/api/auth/callback?code=${code}&provider=${provider}`)
         .then((res) => {
           console.log(res.data);
