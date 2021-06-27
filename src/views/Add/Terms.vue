@@ -7,7 +7,7 @@
       <div id="check">
         <h3 class="heading-9">Terms of Use</h3>
         <div class="text-block-5">Your image (Bavatar) can be used freely by anyone in live websites, screenshots, mockups, posters, etc. You are recognisable in the image and it will never be used in adult, racist or discriminating content. <br><br>You have the copyright rights of your image (Bavatar), and <span class="text-span">Bavatars</span> will not store or claim to own the rights to it. </div>
-        <p class="paragraph-5">If you have any other concerns please email us <span class="text-span-2">hey@getpishure.com</span></p>
+        <p class="paragraph-5">If you have any other concerns please email us <span class="text-span-2">hello@getpishure.com</span></p>
         <div class="add-buttons">
           <a href="#" class="button linkedin w-button">Add via <span class="text-span-7">  LinkedIn </span></a>
           <a href="#" class="button linkedin twiiter w-button">Add via <span class="text-span-7"> Twitter</span></a>

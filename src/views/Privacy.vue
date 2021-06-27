@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <p class="paragraph-5">If you have any other concerns please email us <span class="text-span-2">hey@getpishure.com</span></p>
+    <p class="paragraph-5">If you have any other concerns please email us <span class="text-span-2">hello@getpishure.com</span></p>
   </div>
 </template>
 
