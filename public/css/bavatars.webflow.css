@@ -495,51 +495,6 @@ li {
   padding-left: 0px;
 }
 
-.balls {
-  position: absolute;
-  left: 16%;
-  top: 25%;
-  right: 0%;
-  bottom: 0%;
-  width: 50px;
-  height: 50px;
-  max-height: 90px;
-  max-width: 90px;
-  border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(74%, #ff00e6));
-  background-image: linear-gradient(180deg, red, #ff00e6 74%);
-}
-
-.balls._2 {
-  left: 23%;
-  top: 109%;
-  right: auto;
-  bottom: 0%;
-  box-shadow: none;
-}
-
-.balls._1 {
-  left: auto;
-  top: 0%;
-  right: auto;
-  bottom: 0%;
-  box-shadow: none;
-}
-
-.balls._3 {
-  left: auto;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-}
-
-.balls._4 {
-  left: 16%;
-  top: auto;
-  right: auto;
-  bottom: 11%;
-}
-
 .fordesigners {
   height: 100vh;
   padding-right: 140px;
