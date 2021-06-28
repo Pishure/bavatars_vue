@@ -39,14 +39,6 @@
   </div>
 </template>
 
-<style lang="scss">
-  .bavatarimg {
-    background: url('https://media-exp1.licdn.com/dms/image/C4D03AQGRSlDdydsmNA/profile-displayphoto-shrink_100_100/0/1572429088154?e=1630540800&v=beta&t=OWhvp6A4GlaXCR338y8O6TmG_N8_yyC7aoYhFCbxzvA');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-</style>
 <script>
 import axios from 'axios';
 
@@ -62,6 +54,7 @@ export default {
         age_range: '',
         nature: '',
       },
+      imageEl: null,
     };
   },
   mounted() {
@@ -79,13 +72,24 @@ export default {
   },
   methods: {
     create() {
-
+      axios.post('https://bavatar.herokuapp.com/api/avatar', this.form)
+        .then((res) => {
+          if (res) {
+            this.$router.replace('/explore-bavatars');
+          }
+        })
+        .catch((e) => {
+          throw new Error(e.message);
+        });
     },
     getHdImage(token) {
-      axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-      axios.get('https://api.linkedin.com/v2/me?projection=(profilePicture(displayImage~:playableStreams))')
+      const el = document.getElementById('bavatarimg');
+
+      axios.post('https://bavatar.herokuapp.com/api/avatar/get-hd-image', { token })
         .then((res) => {
-          console.log(res.data);
+          this.form.url = res.data.identifier;
+          el.style.setProperty('background', `grey url(${res.data.identifier}) no-repeat center`);
+          el.style.setProperty('background-size', 'cover');
         });
     },
   },
