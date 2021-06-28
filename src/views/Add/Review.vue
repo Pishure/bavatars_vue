@@ -5,7 +5,7 @@
       <h3 class="heading-11">Hey {{ userData ? userData.name.split(' ')[0] : 'User' }}</h3>
       <p class="paragraph-6">Thanks for contributing your Avatar (avi) to Bavatars! To help designers and creators easily search for the Bavatar they want, please help us fill in the info below!</p>
       <div class="w-form">
-        <form @submit="create" id="wf-form-Filter-Form" name="wf-form-Filter-Form" data-name="Filter Form" class="reviewform">
+        <form @submit.prevent="create" id="wf-form-Filter-Form" name="wf-form-Filter-Form" data-name="Filter Form" class="reviewform">
           <label for="Gender" class="reviewlabel">Gender</label>
           <select v-model="form.gender" id="Gender" name="Gender" data-name="Gender" required="true" class="reviewfield w-select">
             <option value="">Select one...</option>
@@ -31,7 +31,7 @@
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
         </div>
-        <div class="w-form-fail">
+        <div style="display: block" v-show="hasError" id="w-form-fail" class="w-form-fail">
           <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
@@ -54,6 +54,7 @@ export default {
         age_range: '',
         nature: '',
       },
+      hasError: false,
       imageEl: null,
     };
   },
@@ -72,6 +73,10 @@ export default {
   },
   methods: {
     create() {
+      if (!this.form.gender || !this.form.age_range || !this.form.nature) {
+        this.hasError = true;
+        return false;
+      }
       axios.post('https://bavatar.herokuapp.com/api/avatar', this.form)
         .then((res) => {
           if (res) {
@@ -79,8 +84,10 @@ export default {
           }
         })
         .catch((e) => {
+          this.hasError = true;
           throw new Error(e.message);
         });
+      return true;
     },
     getHdImage(token) {
       const el = document.getElementById('bavatarimg');
