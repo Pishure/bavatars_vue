@@ -4,7 +4,7 @@
     <div class="footerlabels">
       <router-link :to="{ name: 'Privacy' }" class="link">Privacy Policy</router-link>
       <a href="mailto:hello@getpishure.com?subject=Bavatars%20Enquiry" class="link">Contact Us</a>
-      <a href="#" class="link">Donate 💖</a>
+      <a href="https://useshukran.com/cr/pishure" class="link">Donate 💖</a>
     </div>
   </div>
 </template>
