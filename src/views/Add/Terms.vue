@@ -12,7 +12,7 @@
           <form action="https://bavatar.herokuapp.com/api/auth/redirect?provider=linkedin" method="post">
             <button type="submit" class="button linkedin w-button">Add via <span class="text-span-7">  LinkedIn </span></button>
           </form>
-          <a href="#" class="button linkedin twiiter w-button">Add via <span class="text-span-7"> Twitter</span></a>
+          <a href="#" class="button linkedin twiiter w-button">Add via <span class="text-span-7"> Twitter (coming soon)</span></a>
         </div>
       </div>
     </div>

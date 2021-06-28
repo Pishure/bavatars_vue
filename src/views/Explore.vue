@@ -9,7 +9,7 @@
             <a @click="downloadImages" v-if="selectedItems.length" href="#" class="downloadbtn w-button">Download</a>
           </div>
           <div class="text-block-8"><span class="text-span-6">Available keywords:</span> Male, Female, Non-binary, Professional, Casual</div>
-          <div class="">Hi 👋🏼, Only One image can downloaded at a time, for now</div>
+          <div class="" style="margin-top:10px; color:#fff;">Hi 👋🏼, Only One image can downloaded at a time, for now</div>
           <div id="bavatarsContainer" class="bavatarscontainer">
             <ul id="Bavatars" role="list" class="bavatarsitems w-list-unstyled">
               <li v-for="(item, i) in bavatars" :key="i" class="bavataritem">
