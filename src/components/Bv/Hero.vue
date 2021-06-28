@@ -14,7 +14,7 @@
         in your personal or commercial design projects or live apps.
       </div>
       <BvButton class="pd" goTo="Add Bavatar" />
-      <div class="text-block-7">Coming Live Soon!</div>
+      <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
     <div class="comingsoon">
       <h2 class="heading-2">PLUGINS COMING SOON TO</h2>
