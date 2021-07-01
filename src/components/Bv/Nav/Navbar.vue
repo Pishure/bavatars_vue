@@ -21,10 +21,17 @@
         </div>
         <BvButton goTo="Add Bavatar" />
       </nav>
-      <div class="menu-button w-nav-button">
+      <div @click="showMobileNav" class="menu-button w-nav-button">
         <div class="icon-3 w-icon-nav-menu"></div>
       </div>
     </div>
+    <nav v-if="mobileNav" style="background: black; transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;"  role="navigation" class="nav-menu w-nav-menu mobile-nav" data-nav-menu-open="">
+      <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link w--nav-link-open">Bavatars</router-link>
+      <router-link to="#" class="nav-link w-nav-link w--nav-link-open" style="">API</router-link>
+      <router-link to="#" class="nav-link w-nav-link w--nav-link-open" style="">Plugins</router-link>
+      <router-link :to="{ name: 'Contributors' }" class="nav-link w-nav-link w--nav-link-open" style="">Contributors</router-link>
+      <router-link :to="{ name: 'Privacy' }" class="nav-link w-nav-link w--nav-link-open" style="">Privacy Policy</router-link>
+    </nav>
   </div>
 </template>
 
@@ -34,6 +41,7 @@ export default {
   data() {
     return {
       subnav: false,
+      mobileNav: false,
     };
   },
   watch: {
@@ -47,6 +55,10 @@ export default {
     showSubnav() {
       // eslint-disable-next-line no-unused-expressions
       this.subnav ? this.subnav = false : this.subnav = true;
+    },
+    showMobileNav() {
+      // eslint-disable-next-line no-unused-expressions
+      this.mobileNav ? this.mobileNav = false : this.mobileNav = true;
     },
   },
 };
