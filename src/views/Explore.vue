@@ -50,7 +50,7 @@
     }
   }
   @keyframes fade {
-    0%,100% { opacity: 0 }
+    0%,80% { opacity: 0 }
     50% { opacity: 1 }
   }
 </style>
@@ -76,7 +76,7 @@ export default {
   },
   methods: {
     getBavatars() {
-      axios.get('https://bavatar.herokuapp.com/api/avatar')
+      axios.get(`${process.env.VUE_APP_BASE_URL}/api/bavatars`)
         .then((res) => {
           this.bavatars = res.data.data;
           this.isLoading = false;

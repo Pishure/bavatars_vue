@@ -48,6 +48,7 @@ export default {
     $route(v) {
       if (v) {
         this.subnav = false;
+        this.mobileNav = false;
       }
     },
   },
