@@ -11,7 +11,10 @@
           <div class="text-block-8"><span class="text-span-6">Available keywords:</span> Male, Female, Non-binary, Professional, Casual</div>
           <div class="" style="margin-top:10px; color:#fff;">Hi there 👋🏼! You can only download one picture at a time, for now.</div>
           <div id="bavatarsContainer" class="bavatarscontainer">
-            <ul id="Bavatars" role="list" class="bavatarsitems w-list-unstyled">
+            <div v-if="isLoading" class="bavatars__loader">
+              <img width="200" src="/images/celebrate.svg">
+            </div>
+            <ul v-else id="Bavatars" role="list" class="bavatarsitems w-list-unstyled">
               <li v-for="(item, i) in bavatars" :key="i" class="bavataritem">
                 <label class="w-checkbox">
                   <div :style="`background: url(${item.url})`" class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input v-model="item.selected" type="checkbox" id="Bavatar" name="Bavatar" data-name="Bavatar" style="opacity:0;position:absolute;z-index:-1"><span for="Bavatar" class="checkbox-label w-form-label">Checkbox</span>
@@ -39,6 +42,17 @@
       background-size: cover !important;
     }
   }
+  .bavatars {
+    &__loader {
+      display: flex;
+      justify-content: center;
+      animation: fade 1.5s infinite;
+    }
+  }
+  @keyframes fade {
+    0%,80% { opacity: 0 }
+    50% { opacity: 1 }
+  }
 </style>
 <script>
 import axios from 'axios';
@@ -48,6 +62,7 @@ export default {
   data() {
     return {
       bavatars: [],
+      isLoading: true,
       selectedItems: [],
     };
   },
@@ -61,10 +76,10 @@ export default {
   },
   methods: {
     getBavatars() {
-      axios.get('https://bavatar.herokuapp.com/api/avatar')
+      axios.get(`${process.env.VUE_APP_BASE_URL}/api/bavatars`)
         .then((res) => {
           this.bavatars = res.data.data;
-          console.log(res.data.data);
+          this.isLoading = false;
         });
     },
     downloadImages() {
