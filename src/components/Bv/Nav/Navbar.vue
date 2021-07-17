@@ -7,8 +7,8 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link">Bavatars</router-link>
-        <router-link to="#" class="nav-link w-nav-link">Plugins</router-link>
-        <a href="#" class="nav-link w-nav-link">API</a>
+        <router-link to="#"  class="nav-link w-nav-link">Plugins</router-link>
+        <a href="https://pishure.gitbook.io/bavatars" class="nav-link w-nav-link">API</a>
         <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
           <div class="w-dropdown-toggle" @click="showSubnav">
             <div class="icon w-icon-dropdown-toggle"></div>
