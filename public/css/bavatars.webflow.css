@@ -85,6 +85,7 @@
   text-decoration: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
+  border-radius: 8px;
 }
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {

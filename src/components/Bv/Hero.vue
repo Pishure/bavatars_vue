@@ -16,7 +16,7 @@
     <div class=heroBtn style="display:flex">
     <BvButton class="pd" goTo="Add Bavatar" />
       <router-link to="/" rel="noreferrer" target="_blank" class="figmabtn" href="https://www.figma.com/community/plugin/999661511334406897/Bavatars">
-        <img src="images/logo-figma-1.svg" style="width:24px;">Download Plugin </router-link>
+        <img src="images/logo-figma-1.svg" style="width:24px;">Install Plugin </router-link>
   </div>
       <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
