@@ -13,9 +13,9 @@
         Bavatars is a free crowd-sourced avatar gallery of Black people to use
         in your personal or commercial design projects or live apps.
       </div>
-    <div class=heroBtn style="position:flex">
+    <div class=heroBtn style="display:flex">
     <BvButton class="pd" goTo="Add Bavatar" />
-      <button style="background-color:transparent; position:flex; color:white; border-color:red; border-style:solid;" class="button pd" target="_blank" href="#"><img src="images/logo-figma-1.svg" style="width:24px;">Download Plugin </button>
+      <button style="background-color:transparent; display:flex; color:white; border:solid red 1px;" class="button pd" target="_blank" href="#"><img src="images/logo-figma-1.svg" style="width:24px;">Download Plugin </button>
   </div>
       <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
