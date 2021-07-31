@@ -79,8 +79,8 @@
   color:white; 
   border:solid red 1px !important; 
   padding:15px 15px 10px 10px !important; 
-  align-content:space-around; 
-  align-items:stretch; 
+  align-content:center; 
+  align-items:center; 
   flex-wrap:wrap;
   text-decoration: none;
   font-family: Inter, sans-serif;
