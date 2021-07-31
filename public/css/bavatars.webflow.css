@@ -73,11 +73,11 @@
   border-top-right-radius: 2px;
 }
 
-.figmabtn {
-  background-color:transparent; 
+.figmabtn  {
+  background-color:transparent !important; 
   display:flex; 
   color:white; 
-  border:solid red 1px; 
+  border:solid red 1px !important; 
   padding:10px; 
   align-content:space-around; 
   align-items:stretch; 
