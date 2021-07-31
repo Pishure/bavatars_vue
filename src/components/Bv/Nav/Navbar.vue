@@ -7,8 +7,8 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link">Explore Bavatars</router-link>
-        <router-link to="#"  class="nav-link w-nav-link">Plugins</router-link>
-        <router-link to="/" rel="noreferrer" href="https://bavatar.herokuapp.com/" class="nav-link w-nav-link">API</router-link>
+        <router-link to="/" rel="noreferrer" target="_blank" href="https://www.figma.com/community/plugin/999661511334406897/Bavatars" class="nav-link w-nav-link">Figma Plugin</router-link>
+        <router-link to="/" rel="noreferrer" target="_blank" href="https://api.bavatars.co/" class="nav-link w-nav-link">API</router-link>
         <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
           <div class="w-dropdown-toggle" @click="showSubnav">
             <div class="icon w-icon-dropdown-toggle"></div>
