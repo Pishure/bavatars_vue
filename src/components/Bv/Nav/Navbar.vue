@@ -13,7 +13,7 @@
             <div class="text-block">Plugins</div>
           </div>
           <nav :style="`display: ${subnav2? 'block' : 'none'}; background: transparent`" id="subnav2" class="dropdown-list w-dropdown-list">
-            <router-link :to="{ name: 'Figma' }" class="dropdown-link w-dropdown-link">Figma</router-link>
+            <router-link to="/" rel="noreferrer" href="https://www.figma.com/community/plugin/999661511334406897/Bavatars" class="dropdown-link w-dropdown-link">Figma</router-link>
           </nav>
         </div>
         <router-link to="/" rel="noreferrer" href="https://api.bavatars.co/" class="nav-link w-nav-link">API</router-link>
