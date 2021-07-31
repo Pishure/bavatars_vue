@@ -14,6 +14,7 @@
         in your personal or commercial design projects or live apps.
       </div>
       <BvButton class="pd" goTo="Add Bavatar" />
+      <button class="pd" target="_blank" href="#">
       <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
     <div class="comingsoon">
@@ -29,11 +30,6 @@
           loading="lazy"
           alt="Adobe XD logo"
           class="plogos"
-        /><img
-          src="images/logo-figma-1.svg"
-          loading="lazy"
-          alt="Figma logo"
-          class="plogos figma"
         />
       </div>
     </div>
