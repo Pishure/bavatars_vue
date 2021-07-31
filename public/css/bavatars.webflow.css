@@ -73,6 +73,17 @@
   border-top-right-radius: 2px;
 }
 
+.figmabtn {
+  background-color:transparent; 
+  display:flex; 
+  color:white; 
+  border:solid red 1px; 
+  padding:10px; 
+  align-content:space-around; 
+  align-items:stretch; 
+  flex-wrap:wrap;
+}
+
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
   border-top-color: #3898ec;
