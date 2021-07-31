@@ -82,6 +82,9 @@
   align-content:space-around; 
   align-items:stretch; 
   flex-wrap:wrap;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
 }
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
