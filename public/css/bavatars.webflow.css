@@ -78,7 +78,7 @@
   display:flex; 
   color:white; 
   border:solid red 1px !important; 
-  padding:10px; 
+  padding:10px !important; 
   align-content:space-around; 
   align-items:stretch; 
   flex-wrap:wrap;
