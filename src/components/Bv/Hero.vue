@@ -14,7 +14,7 @@
         in your personal or commercial design projects or live apps.
       </div>
       <BvButton class="pd" goTo="Add Bavatar" />
-      <button class="pd" target="_blank" href="#">
+      <button class="button" target="_blank" href="#">Download Figma Button</button>
       <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
     <div class="comingsoon">
