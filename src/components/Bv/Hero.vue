@@ -15,7 +15,7 @@
       </div>
     <div class=heroBtn style="position:flex">
     <BvButton class="pd" goTo="Add Bavatar" />
-      <button style="background-color:transparent; position:flex; color:white; border:red;" class="button pd" target="_blank" href="#"><img src="images/logo-figma-1.svg" width="24px">Download Plugin </button>
+      <button style="background-color:transparent; position:flex; color:white; border-color:red; border-style:solid;" class="button pd" target="_blank" href="#"><img src="images/logo-figma-1.svg" style="width:24px;">Download Plugin </button>
   </div>
       <!-- <div class="text-block-7">Coming Live Soon!</div> -->
     </div>
