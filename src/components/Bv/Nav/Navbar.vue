@@ -6,9 +6,18 @@
         <router-link to="/" rel="noreferrer" href="http://getpishure.com" target="_blank" class="w-inline-block"><img src="images/by-Pishure.svg" loading="lazy" alt="by Pishure logo"></router-link>
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link">Bavatars</router-link>
+        <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link">Explore Bavatars</router-link>
+        <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
+          <div class="w-dropdown-toggle" @click="showSubnav">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="text-block">Plugins</div>
+          </div>
+          <nav :style="`display: ${subnav? 'block' : 'none'}; background: transparent`" id="subnav" class="dropdown-list w-dropdown-list">
+            <router-link :to="{ name: 'Figma' }" class="dropdown-link w-dropdown-link">Figma</router-link>
+          </nav>
+        </div>
         <router-link to="#"  class="nav-link w-nav-link">Plugins</router-link>
-        <router-link to="/" rel="noreferrer" href="https://bavatar.herokuapp.com/" class="nav-link w-nav-link">API</router-link>
+        <router-link to="/" rel="noreferrer" href="https://api.bavatars.co/" class="nav-link w-nav-link">API</router-link>
         <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
           <div class="w-dropdown-toggle" @click="showSubnav">
             <div class="icon w-icon-dropdown-toggle"></div>
@@ -20,6 +29,7 @@
           </nav>
         </div>
         <BvButton goTo="Add Bavatar" />
+        <BvButton goTo="Figma Plugin" />
       </nav>
       <div @click="showMobileNav" class="menu-button w-nav-button">
         <div class="icon-3 w-icon-nav-menu"></div>
