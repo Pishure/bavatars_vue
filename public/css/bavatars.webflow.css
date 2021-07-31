@@ -2167,6 +2167,10 @@ li {
 }
 
 @media screen and (max-width: 479px) {
+  .heroBtn {
+    display: block;
+
+  }
   p {
     font-size: 12px;
     line-height: 20px;
