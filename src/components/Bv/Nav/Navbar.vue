@@ -8,15 +8,14 @@
       <nav role="navigation" class="nav-menu w-nav-menu">
         <router-link :to="{ name: 'Explore Bavatars' }" class="nav-link w-nav-link">Explore Bavatars</router-link>
         <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
-          <div class="w-dropdown-toggle" @click="showSubnav">
+          <div class="w-dropdown-toggle" @click="showSubnav2">
             <div class="icon w-icon-dropdown-toggle"></div>
             <div class="text-block">Plugins</div>
           </div>
-          <nav :style="`display: ${subnav? 'block' : 'none'}; background: transparent`" id="subnav" class="dropdown-list w-dropdown-list">
+          <nav :style="`display: ${subnav2? 'block' : 'none'}; background: transparent`" id="subnav2" class="dropdown-list w-dropdown-list">
             <router-link :to="{ name: 'Figma' }" class="dropdown-link w-dropdown-link">Figma</router-link>
           </nav>
         </div>
-        <router-link to="#"  class="nav-link w-nav-link">Plugins</router-link>
         <router-link to="/" rel="noreferrer" href="https://api.bavatars.co/" class="nav-link w-nav-link">API</router-link>
         <div data-hover="1" data-delay="0" class="nav-link w-dropdown">
           <div class="w-dropdown-toggle" @click="showSubnav">
@@ -28,8 +27,8 @@
             <router-link :to="{ name: 'Contributors' }" class="dropdown-link w-dropdown-link">Contributors</router-link>
           </nav>
         </div>
-        <BvButton goTo="Add Bavatar" />
-        <BvButton goTo="Figma Plugin" />
+        <BvButton goTo="Add Bavatar"/>
+        
       </nav>
       <div @click="showMobileNav" class="menu-button w-nav-button">
         <div class="icon-3 w-icon-nav-menu"></div>
