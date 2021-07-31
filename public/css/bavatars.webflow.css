@@ -2189,6 +2189,8 @@ li {
 
   .figmabtn {
     margin-top: 10px;
+    align-content:center; 
+    align-items:center; 
   }
   p {
     font-size: 12px;
